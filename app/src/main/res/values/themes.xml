@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tapity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/transparent</item>
+    </style>
+
+    <style name="Button.White" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+
+    <style name="Theme.Tapity" parent="Base.Theme.Tapity" />
+</resources>

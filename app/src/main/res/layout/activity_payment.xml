@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/milk"
+    android:paddingStart="35dp"
+    android:paddingEnd="45dp"
+    tools:context=".PaymentActivity">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="140dp"
+            android:paddingLeft="@null"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:background="@null"
+                app:srcCompat="@drawable/back_button_image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkout"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:textSize="30sp"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment method"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_error"
+            android:text="  Dear user, mpesa service is not selectable at the moment"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_ch1"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonMpesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mpesa"
+                    android:clickable="false"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:checked="true"
+                    android:buttonTintMode="@color/grey_blue"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery method"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/radio_button_border">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Door delivery"
+                android:fontFamily="@font/inter_regular"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/bottom_line2"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/totaltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="220dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonConfirmCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/locationactivity_button"
+            android:textColor="@color/white"
+            android:text="@string/confirm"
+            android:textSize="18sp"
+            android:textAllCaps="false"/>
+
+
+
+
+</LinearLayout>

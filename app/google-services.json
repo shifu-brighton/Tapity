@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "146043337856",
+    "firebase_url": "https://tapity-default-rtdb.firebaseio.com",
+    "project_id": "tapity",
+    "storage_bucket": "tapity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146043337856:android:4905502faae02c149bfa65",
+        "android_client_info": {
+          "package_name": "com.example.tapity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146043337856-b93dea7tr9pvojhijuec8h5plf2m0dih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tapity",
+            "certificate_hash": "de8dbbfc1a21db2a4cc3331faeddc8064c0104b6"
+          }
+        },
+        {
+          "client_id": "146043337856-n65efm20sivegvacrcls1tbl2emrl6u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS8B52Fp_pOmt_ynqo4onhsoZmpzghb2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146043337856-n65efm20sivegvacrcls1tbl2emrl6u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
