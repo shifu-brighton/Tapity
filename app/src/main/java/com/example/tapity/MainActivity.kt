@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         Handler().postDelayed({
-            val i = Intent(this@MainActivity, PaymentActivity::class.java)
+            val i = Intent(this@MainActivity, HomeActivity::class.java)
             startActivity(i)
             finish()
 

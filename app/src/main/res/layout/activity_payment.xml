@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingRight="140dp"
+            android:paddingRight="30dp"
             android:paddingLeft="@null"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Checkout"
-                android:textSize="18sp"
+                android:textSize="35sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"/>
 
@@ -102,36 +102,64 @@
             android:layout_marginBottom="10dp"
             android:textColor="@color/black"/>
 
-        <RadioGroup
-            android:layout_width="match_parent"
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/radio_button_border"
+        android:paddingLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:layout_marginBottom="40dp"
-            android:background="@drawable/radio_button_border">
+            android:fontFamily="@font/inter_regular"
+            android:text="Door delivery"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-            <RadioButton
-                android:id="@+id/radioButton1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Door delivery"
-                android:fontFamily="@font/inter_regular"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bottom_line2" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/bottom_line2"/>
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="Pickup"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RadioGroup>
 
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pickup"
-                android:textStyle="bold"
-                android:fontFamily="@font/inter_regular"
-                android:textColor="@color/black"/>
-        </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/inter_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Quantity_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="190dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -139,6 +167,7 @@
             android:orientation="horizontal"
             android:layout_marginBottom="30dp"
             android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -53,4 +53,5 @@
     </string>
     <string name="email_address">Email ddress</string>
     <string name="confirm">Confirm</string>
+    <string name="quantity">Quantity</string>
 </resources>

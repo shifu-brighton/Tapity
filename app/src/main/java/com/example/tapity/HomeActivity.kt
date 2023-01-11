@@ -32,37 +32,61 @@ class HomeActivity : AppCompatActivity() {
 
 
         btn1.setOnClickListener(){
-            Toast.makeText(this@HomeActivity, "You clicked $one", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this,CheckoutActivity::class.java)
+            val bundle = Bundle()
+            bundle.putString("amount", one.toString())
+            val intent = Intent(this,CounterActivity::class.java)
+            intent.putExtras(bundle)
             startActivity(intent)
         }
 
         btn2.setOnClickListener(){
-            Toast.makeText(this@HomeActivity, "You clicked $two", Toast.LENGTH_SHORT).show()
+            val bundle = Bundle()
+            bundle.putString("amount", two.toString())
+            val intent = Intent(this,CounterActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
         }
 
         btn3.setOnClickListener(){
-            Toast.makeText(this@HomeActivity, "You clicked 1", Toast.LENGTH_SHORT).show()
-        }
+            val bundle = Bundle()
+            bundle.putString("amount", three.toString())
+            val intent = Intent(this,CounterActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)        }
 
         btn4.setOnClickListener(){
-            Toast.makeText(this@HomeActivity, "You clicked 1", Toast.LENGTH_SHORT).show()
-        }
+            val bundle = Bundle()
+            bundle.putString("amount", four.toString())
+            val intent = Intent(this,CounterActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)        }
 
         btn5.setOnClickListener(){
-            Toast.makeText(this@HomeActivity, "You clicked 1", Toast.LENGTH_SHORT).show()
-        }
+            val bundle = Bundle()
+            bundle.putString("amount", five.toString())
+            val intent = Intent(this,CounterActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)        }
 
         btn6.setOnClickListener(){
-            Toast.makeText(this@HomeActivity, "You clicked 1", Toast.LENGTH_SHORT).show()
-        }
+            val bundle = Bundle()
+            bundle.putString("amount", six.toString())
+            val intent = Intent(this,CounterActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)        }
 
         btn7.setOnClickListener(){
-            Toast.makeText(this@HomeActivity, "You clicked 1", Toast.LENGTH_SHORT).show()
-        }
+            val bundle = Bundle()
+            bundle.putString("amount", seven.toString())
+            val intent = Intent(this,CounterActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)        }
 
         btn8.setOnClickListener(){
-            Toast.makeText(this@HomeActivity, "You clicked 1", Toast.LENGTH_SHORT).show()
-        }
+            val bundle = Bundle()
+            bundle.putString("amount", eight.toString())
+            val intent = Intent(this,CounterActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)        }
     }
 }

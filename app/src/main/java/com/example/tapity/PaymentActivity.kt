@@ -13,12 +13,12 @@ class PaymentActivity : AppCompatActivity() {
         val database = Firebase.database
         val myRef = database.getReference("message1")
         var num = 0;
-        val btn_confirm = findViewById<Button>(R.id.buttonConfirmCheckout)
-        btn_confirm.setOnClickListener{
-            num += 1
-            myRef.setValue("Shifu the great one of all! $num")
-        }
-        // Write a message to the database
+//        val btn_confirm = findViewById<Button>(R.id.buttonConfirmCheckout)
+//        btn_confirm.setOnClickListener{
+//            num += 1
+//            myRef.setValue("Shifu the great one of all! $num")
+//        }
+        // *Write a message to the database
 
 
 
